@@ -7,22 +7,9 @@
     tools:context=".DrawerActivity"
     android:id="@+id/drawerlayout">
 
-
     <LinearLayout
-        android:background="#ffffff"
-        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:textColor="#000000"
-            android:textSize="20dp"
-            android:textStyle="normal"
-            android:text="Empty notes!"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-    </LinearLayout>
+        android:layout_height="wrap_content">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -32,20 +19,68 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorPrimary"
+            android:background="@color/colorBlue"
             android:elevation="20dp">
         </androidx.appcompat.widget.Toolbar>
-
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-
+</LinearLayout>
 
     <LinearLayout
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Empty notes!"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlue"
+            android:scaleType="centerCrop"
+            android:text="Add now!"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        app:headerLayout="@layout/navigation_header"
+        android:id="@+id/navigation_view"
         android:orientation="vertical"
         android:background="#ffffff"
         android:layout_gravity="left"
         android:layout_width="300dp"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent">
+
+
+            <TextView
+                android:background="@drawable/sleepweek"
+                android:layout_width="300dp"
+                android:layout_height="160dp"
+                android:id="@+id/txtHeader"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="NoteBook"
+                android:textColor="#000000"
+                android:textStyle="italic"
+                android:textSize="30dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+
+
     <TextView
         android:layout_marginLeft="10dp"
         android:textColor="#000000"
