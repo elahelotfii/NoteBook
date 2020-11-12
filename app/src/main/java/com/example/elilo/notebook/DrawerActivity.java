@@ -17,6 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.SearchView;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 
 public class DrawerActivity extends AppCompatActivity {
@@ -35,6 +36,8 @@ public class DrawerActivity extends AppCompatActivity {
 
         TextView textView = (TextView) findViewById(R.id.txtHeader);
         ImageView imageView = (ImageView) findViewById(R.id.imageView);
+
+        FloatingActionButton floatingActionButton = (FloatingActionButton) findViewById(R.id.floating_action_button);
 
         toolbar.setTitleTextColor(ContextCompat.getColor(this, R.color.colorBlack));
 

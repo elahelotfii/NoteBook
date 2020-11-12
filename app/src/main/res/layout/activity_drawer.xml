@@ -22,21 +22,22 @@
             android:background="@color/colorBlue"
             android:elevation="20dp">
         </androidx.appcompat.widget.Toolbar>
+
+
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </LinearLayout>
 
     <LinearLayout
         android:layout_marginTop="50dp"
+        android:gravity="center"
         android:orientation="vertical"
         android:background="#ffffff"
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
-
         <TextView
+            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Empty notes!"
@@ -45,6 +46,7 @@
             android:textStyle="normal" />
 
         <Button
+            android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:id="@+id/btnadd"
             android:layout_width="wrap_content"
@@ -53,8 +55,26 @@
             android:scaleType="centerCrop"
             android:text="Add now!"
             android:textColor="#ffffff" />
-
     </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="right">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floating_action_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="bottom"
+                android:backgroundTint="@color/colorBlue"
+                app:borderWidth="@dimen/cardview_default_elevation"
+                android:contentDescription="@string/fab_content_desc"
+                android:src="@drawable/ic_baseline_add_circle_24"/>
+
+        </LinearLayout>
 
     <LinearLayout
         app:headerLayout="@layout/navigation_header"
