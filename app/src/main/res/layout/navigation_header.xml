@@ -22,14 +22,4 @@
         android:textSize="30dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
-    <ImageView
-        android:paddingTop="8dp"
-        android:id="@+id/imageView"
-        android:src="@drawable/profilepic"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:scaleType="centerCrop"
-        android:contentDescription="Profile Picture"/>
-
-
 </LinearLayout>

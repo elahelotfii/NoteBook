@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">NoteBook</string>
     <string name="fab_content_desc">fab_content_desc</string>
+    <string name="empty_notes">Empty notes!</string>
+    <string name="add_now">Add now!</string>
+    <string name="notebook">NoteBook</string>
+    <string name="notes">Notes</string>
+    <string name="reminders">Reminders</string>
+    <string name="archive">Archive</string>
+    <string name="note_book">Note Book</string>
 </resources>

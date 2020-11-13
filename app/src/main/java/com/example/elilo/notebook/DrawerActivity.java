@@ -8,10 +8,14 @@ import androidx.core.content.ContextCompat;
 import androidx.core.view.MenuItemCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.SearchView;
@@ -22,20 +26,27 @@ import com.google.android.material.navigation.NavigationView;
 
 public class DrawerActivity extends AppCompatActivity {
 
-
+    public Button btnadd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drawer);
 
-        LinearLayout linearLayout = (LinearLayout) findViewById(R.id.navigation_view);
+        Button button = (Button) findViewById(R.id.btnadd);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DrawerActivity.this, ListViewActivity.class);
+                startActivity(intent);
+            }
+        });
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        TextView textView = (TextView) findViewById(R.id.txtHeader);
-        ImageView imageView = (ImageView) findViewById(R.id.imageView);
+        TextView textView = (TextView) findViewById(R.id.txtlist);
 
         FloatingActionButton floatingActionButton = (FloatingActionButton) findViewById(R.id.floating_action_button);
 
@@ -48,7 +59,10 @@ public class DrawerActivity extends AppCompatActivity {
         DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawerlayout);
         ActionBarDrawerToggle drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, 0, 0);
         drawerToggle.syncState();
+
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

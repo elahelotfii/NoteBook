@@ -40,7 +40,7 @@
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Empty notes!"
+            android:text="@string/empty_notes"
             android:textColor="#000000"
             android:textSize="20dp"
             android:textStyle="normal" />
@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             android:background="@color/colorBlue"
             android:scaleType="centerCrop"
-            android:text="Add now!"
+            android:text="@string/add_now"
             android:textColor="#ffffff" />
     </LinearLayout>
 
@@ -93,7 +93,7 @@
                 android:id="@+id/txtHeader"
                 android:paddingTop="10dp"
                 android:paddingLeft="10dp"
-                android:text="NoteBook"
+                android:text="@string/notebook"
                 android:textColor="#000000"
                 android:textStyle="italic"
                 android:textSize="30dp"
@@ -107,7 +107,7 @@
         android:textSize="15dp"
         android:textStyle="normal"
         android:layout_marginTop="10dp"
-        android:text="Notes"
+        android:text="@string/notes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
@@ -117,7 +117,7 @@
             android:textSize="15dp"
             android:textStyle="normal"
             android:layout_marginTop="30dp"
-            android:text="Reminders"
+            android:text="@string/reminders"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -127,7 +127,7 @@
             android:textSize="15dp"
             android:textStyle="normal"
             android:layout_marginTop="40dp"
-            android:text="Archive"
+            android:text="@string/archive"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
